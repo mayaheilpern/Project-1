@@ -33,7 +33,7 @@ api.giphy.com/v1/gifs/search
 
 I will be creating a page that will allow the user to search for any gif. It will have a header with the page name on it and a search bar.
 
-<img src="https://whimsical.com/b8a74d7a-b2e6-49ce-b74a-a9d5ce6461d0"/>
+<img src="https://i.postimg.cc/J46QMLmm/Project-1-Frame-2x.png"/>
 
 ### MVP/PostMVP
 
@@ -61,7 +61,7 @@ I will be creating a page that will allow the user to search for any gif. It wil
 
 ## Priority Matrix
 
-<img src =""/>
+<img src ="https://i.postimg.cc/ZnqyMWWN/Priority-Matrix-2x.png"/>
 
 ## Timeframes
 
