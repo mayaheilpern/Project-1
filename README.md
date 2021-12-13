@@ -45,7 +45,6 @@ I will be creating a page that will allow the user to search for any gif. It wil
 #### PostMVP  
 
 - Allow user to choose favorites 
-- Allow user to create there own gif
 
 ## Project Schedule
 
