@@ -24,11 +24,38 @@ getInput("red");
 const gifList = document.querySelector(".gif-list");
 
 function showData(data) {
+  // const gifA = document.createElement("a");
+  // gifA.href = `${data.images.fixed_height.url}`;
+  // gifList.appendChild(gifA);
+  // console.log(gifA);
+
   const gifImg = document.createElement("img");
-  gifImg.src = `${data.images.original.url}`;
+  gifImg.src = `${data.images.fixed_height.url}`;
   gifList.appendChild(gifImg);
-  console.log(gifImg);
+
+  // gifImg.onload = () => {//download images
+  //   const canvas = document.createElement("canvas");
+  //   const ctx = canvas.getContext("2d");
+  //   let dataURL;
+  //   canvas.height = gifImg.naturalHeight;
+  //   canvas.width = gifImg.naturalWidth;
+  //   ctx.drawImage(gifImg, 0, 0);
+  //   dataURL = canvas.toDataURL('image/jpeg', 1.0);
+  //   callback(dataURL);
+  // }
+
+  // const urlToObject = async () => {
+  //   const response = await fetch(image);
+  //   image = gifImg;
+  //   const blob = await response.blob();
+  //   const file = new File([blob], 'image.jpg', { type: blob.type });
+  //   console.log(file);
+  // }
 }
+
+// const dbtn = document.createElement("button");
+// dbtn.classList.add = (".download");
+// const download = document.querySelector(".download");
 
 const button = document.querySelector("#search");
 const input = document.querySelector("input");
