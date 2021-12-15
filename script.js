@@ -29,17 +29,6 @@ function showData(data) {
   gifImg.src = `${data.images.fixed_height.url}`;
   gifList.appendChild(gifImg);
 
-  // gifImg.onload = () => {//download images
-  //   const canvas = document.createElement("canvas");
-  //   const ctx = canvas.getContext("2d");
-  //   let dataURL;
-  //   canvas.height = gifImg.naturalHeight;
-  //   canvas.width = gifImg.naturalWidth;
-  //   ctx.drawImage(gifImg, 0, 0);
-  //   dataURL = canvas.toDataURL('image/jpeg', 1.0);
-  //   callback(dataURL);
-  // }
-
 }
 
 // const dbtn = document.createElement("button");
@@ -64,3 +53,13 @@ function removeGif() {
   gifList.innerHTML = "";
 }
 
+  // gifImg.onload = () => {//download images, was in showData
+  //   const canvas = document.createElement("canvas");
+  //   const ctx = canvas.getContext("2d");
+  //   let dataURL;
+  //   canvas.height = gifImg.naturalHeight;
+  //   canvas.width = gifImg.naturalWidth;
+  //   ctx.drawImage(gifImg, 0, 0);
+  //   dataURL = canvas.toDataURL('image/jpeg', 1.0);
+  //   callback(dataURL);
+  // }
