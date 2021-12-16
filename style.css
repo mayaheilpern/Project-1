@@ -55,10 +55,14 @@ img {
   border-radius: 15px;
 }
 
+.fav-btn{
+  margin: 1px;
+}
+
 @media (max-width: 850px){
   h1{
     all: unset;
-  font-size: 48px;
+  font-size: 54px;
   background-image: url(https://i.postimg.cc/Tw2tsPJX/Red-and-blue-mix.jpg);
   background-size: cover;
   background-clip: text;
@@ -66,7 +70,11 @@ img {
   color: transparent;
   }
   .form {
-    margin-top: auto;
+    margin-top: 8px;
+    height: 47px;
+  }
+  input {
+    font-size: 25px;
   }
 }
 
