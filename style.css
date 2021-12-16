@@ -58,21 +58,15 @@ img {
 @media (max-width: 850px){
   h1{
     all: unset;
-  font-size: x-large;
-  /* text: url("https://i.postimg.cc/brkwtyS4/images.jpg"); */
+  font-size: 48px;
   background-image: url(https://i.postimg.cc/Tw2tsPJX/Red-and-blue-mix.jpg);
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  /* font-size: xxx-large;
-  background-image: url(https://i.postimg.cc/Tw2tsPJX/Red-and-blue-mix.jpg);
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  /* height: 175px; */
-  /*width: 317px; */
+  }
+  .form {
+    margin-top: auto;
   }
 }
 
@@ -87,4 +81,4 @@ img {
 
 .download:hover {
   background-color: RoyalBlue;
-} */
+} *
