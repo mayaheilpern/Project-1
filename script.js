@@ -1,5 +1,5 @@
 async function getInput(gif) {
-  const url = `https://api.giphy.com/v1/gifs/search?api_key=RwcmcWQsdLYKrhxc8DwUjYNqy33d7jpW&q=${gif}`;//&limit=25
+  const url = `https://api.giphy.com/v1/gifs/search?api_key=RwcmcWQsdLYKrhxc8DwUjYNqy33d7jpW&q=${gif}`;
   const response = await axios.get(url);
   console.log(response);
   const gifData = response.data.data;
@@ -8,20 +8,32 @@ async function getInput(gif) {
   });
 }
 
-getInput("");
+getInput("red");
 
 const gifList = document.querySelector(".gif-list");
 
 function showData(data) {
   let t = window.matchMedia("(max-width: 850px)")
   if (t.matches) {
-    const gifImg2 = document.createElement("img");
-    gifImg2.src = `${data.images.fixed_height_small.url}`;
-    gifList.appendChild(gifImg2);
+    const gifDiv = document.createElement("div");
+    const gifImg = document.createElement("img");
+    gifImg.src = `${data.images.fixed_height_small.url}`;
+    gifDiv.appendChild(gifImg);
+    gifList.appendChild(gifDiv);
+    gifDiv.classList.add("gif-div");
+    // let gifBtn = document.createElement("button");
+    // gifBtn.classList.add("gif-btn");
+    // gifDiv.appendChild(gifBtn);
   } else {
+    const gifDiv = document.createElement("div");
     const gifImg = document.createElement("img");
     gifImg.src = `${data.images.fixed_height.url}`;
-    gifList.appendChild(gifImg);
+    gifDiv.appendChild(gifImg);
+    gifList.appendChild(gifDiv);
+    gifDiv.classList.add("gif-div");
+    // let gifBtn = document.createElement("button");
+    // gifBtn.classList.add("gif-btn");
+    // gifDiv.appendChild(gifBtn);
   }
 }
 
@@ -43,20 +55,15 @@ function removeGif() {
   gifList.innerHTML = "";
 }
 
-
-
-// favorite.addEventListener("click", function () { 
-//   window.localStorage
+// document.getElementByClassName("gif-btn").addEventListener("click", function () {
+//   window.localStorage.setItem("name", "john doe");
+//   updateFav();
 // });
 
-
-
-// $(img).hover(function () {
-//   let favoriteButton = document.createElement("button");
-//   favoriteButton.classList.add("fav-btn");
-// });
-
-// let image = document.querySelector("img");
-// let favorite = document.createElement("button");
-// favorite.classList.add("fav-btn");
-// image.appendChild(favorite);
+// function updateFav() {
+//   let values = [], keys = Object.keys(localStorage), i = keys.length;
+//   while (i--) {
+//     values.push(localStorage.getItem(keys[i]));
+//   }
+//   document.getElementById("list").textContent = values;
+// }

@@ -55,9 +55,23 @@ img {
   border-radius: 15px;
 }
 
-.fav-btn{
-  margin: 1px;
+.gif-btn {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -5vh;
+  margin-left: 32px;
+  transform: translate(-50%, -50%);
+  /* background-color: transparent; */
+  background-color: thistle;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
+
+/* .gif-btn:hover {
+  background-color: black;
+}  */
 
 @media (max-width: 850px){
   h1{
