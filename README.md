@@ -6,11 +6,9 @@ Giphy
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+Search for a Gif
 
 ## API and Data Sample
-
-Search for a Gif
 
 api.giphy.com/v1/gifs/search
 
@@ -45,17 +43,18 @@ I will be creating a page that will allow the user to search for any gif. It wil
 #### PostMVP  
 
 - Allow user to choose favorites 
+- Be able to download images
 
 ## Project Schedule
 
 |  Day | Deliverable | Status
 |---|---| ---|
 |Dec 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | complete
-|Dec 13| Project Approval | Incomplete
-|Dec 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Dec 14| Pseudocode / actual code | Incomplete
-|Dec 15| Initial Clickable Model  | Incomplete
-|Dec 16| MVP | Incomplete
+|Dec 13| Project Approval | complete
+|Dec 13| Core Application Structure (HTML, CSS, etc.) | complete
+|Dec 14| Pseudocode / actual code | complete
+|Dec 15| Initial Clickable Model  | complete
+|Dec 16| MVP | complete
 |Dec 17| Presentations | Incomplete
 
 ## Priority Matrix
@@ -66,18 +65,21 @@ I will be creating a page that will allow the user to search for any gif. It wil
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Basic HTML and CSS | H | 3hrs| | |
-| Working with API | H | 3hrs| | |
-| Creating items to append to DOM | H | 2hrs| |
-| Creating Functions | H | 4.5hrs|
-| Appending items to the DOM | H | 1.5hrs| |
-| Organizing JavaScript | M | 2hrs| |
-| Formatting CSS | H | 3hrs| |
-| Finish styling | M | 1hr| |
-| Debugging | H | 5hrs| | 
-| Cleaning and testing | H | 4hrs| |
-| Total | H | 29hrs| | |
+| Basic HTML and CSS | H | 3hrs| 3hrs|3hrs |
+| Working with API | H | 3hrs| 2hrs| 2hrs|
+| Creating items to append to DOM | H | 2hrs|2hrs |2hrs|
+| Creating Functions | H | 4.5hrs|4hrs|4hrs|
+| Appending items to the DOM | H | 1.5hrs|1.5hrs |1.5hrs|
+| Organizing JavaScript | M | 2hrs|1hr |1hr|
+| Formatting CSS | H | 3hrs| 4hrs|4hrs|
+| Finish styling | M | 1hr|1hr |1hr|
+| Debugging | H | 5hrs| 3hrs| 3hrs|
+| Cleaning and testing | H | 4hrs|1hr |1hr|
+| Total | H | 29hrs|22.5hrs | 22.5hrs|
 
 ## Code Snippet
-
+```
+let t = window.matchMedia("(max-width: 850px)")
+if (t.matches) {
+  ```
 ## Change Log 
