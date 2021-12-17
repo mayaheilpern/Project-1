@@ -1,5 +1,5 @@
 body {
- background-color: #2a2a2a;
+ background-color: #161616;
  font-family: 'Varela Round', sans-serif;
  margin: 0vw;
     margin-right: 5vw;
@@ -46,7 +46,7 @@ input::placeholder {
 .gif-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 
 img {

@@ -8,7 +8,7 @@ async function getInput(gif) {
   });
 }
 
-getInput("red");
+getInput("");
 
 const gifList = document.querySelector(".gif-list");
 
