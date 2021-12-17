@@ -21,9 +21,6 @@ function showData(data) {
     gifDiv.appendChild(gifImg);
     gifList.appendChild(gifDiv);
     gifDiv.classList.add("gif-div");
-    // let gifBtn = document.createElement("button");
-    // gifBtn.classList.add("gif-btn");
-    // gifDiv.appendChild(gifBtn);
   } else {
     const gifDiv = document.createElement("div");
     const gifImg = document.createElement("img");
@@ -31,9 +28,6 @@ function showData(data) {
     gifDiv.appendChild(gifImg);
     gifList.appendChild(gifDiv);
     gifDiv.classList.add("gif-div");
-    // let gifBtn = document.createElement("button");
-    // gifBtn.classList.add("gif-btn");
-    // gifDiv.appendChild(gifBtn);
   }
 }
 
@@ -55,15 +49,3 @@ function removeGif() {
   gifList.innerHTML = "";
 }
 
-// document.getElementByClassName("gif-btn").addEventListener("click", function () {
-//   window.localStorage.setItem("name", "john doe");
-//   updateFav();
-// });
-
-// function updateFav() {
-//   let values = [], keys = Object.keys(localStorage), i = keys.length;
-//   while (i--) {
-//     values.push(localStorage.getItem(keys[i]));
-//   }
-//   document.getElementById("list").textContent = values;
-// }

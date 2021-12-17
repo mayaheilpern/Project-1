@@ -10,11 +10,12 @@ h1 {
   all: unset;
   font-size: 100px;
   /* text: url("https://i.postimg.cc/brkwtyS4/images.jpg"); */
-  background-image: url(https://i.postimg.cc/Tw2tsPJX/Red-and-blue-mix.jpg);
+  /* background-image: url(https://i.postimg.cc/Tw2tsPJX/Red-and-blue-mix.jpg);
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  color: transparent; */
+  color: #ca00d8;
 }
 
 .form {
